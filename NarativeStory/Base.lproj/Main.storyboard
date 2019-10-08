@@ -15,13 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Welcome to Pokemon adventure!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzB-kW-3mx">
-                                <rect key="frame" x="20" y="114" width="374" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please pick your first Pokemon..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NES-as-WuB">
                                 <rect key="frame" x="20" y="191" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -53,8 +46,15 @@
                                     <outletCollection property="gestureRecognizers" destination="ClA-wm-SkN" appends="YES" id="R8c-EM-eOU"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Welcome to Pokemon adventure!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzB-kW-3mx">
+                                <rect key="frame" x="20" y="114" width="374" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Bulbasaur-->
         <scene sceneID="tWA-ZE-3zh">
             <objects>
-                <viewController id="07o-xr-urr" sceneMemberID="viewController">
+                <viewController id="07o-xr-urr" customClass="ViewController_Bulbasaur" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2dq-LO-3GU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="753.62318840579712" y="369.64285714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Bulbasaur1-->
         <scene sceneID="DsM-Po-pG2">
             <objects>
-                <viewController id="Mvm-Di-O08" sceneMemberID="viewController">
+                <viewController id="Mvm-Di-O08" customClass="ViewController_Bulbasaur_1" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5BL-zQ-nSw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="1589.8550724637682" y="370.98214285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Bulbasaur2-->
         <scene sceneID="Zsg-tK-KWC">
             <objects>
-                <viewController id="jje-G3-511" sceneMemberID="viewController">
+                <viewController id="jje-G3-511" customClass="ViewController_Bulbasaur_2" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oqA-Cr-mkK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="2394.202898550725" y="370.98214285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Bulbasaur3-->
         <scene sceneID="hHB-CM-54g">
             <objects>
-                <viewController id="Gds-xi-NbK" sceneMemberID="viewController">
+                <viewController id="Gds-xi-NbK" customClass="ViewController_Bulbasaur_3" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kkw-p2-9O0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="3224.6376811594205" y="372.99107142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Charmander3-->
         <scene sceneID="784-Sn-OHW">
             <objects>
-                <viewController id="4Pc-GF-bZy" sceneMemberID="viewController">
+                <viewController id="4Pc-GF-bZy" customClass="ViewController_Charmander_3" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A5q-t6-UmV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="2634.7826086956525" y="-1339.2857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Squirtle-->
         <scene sceneID="dqc-f2-Kha">
             <objects>
-                <viewController id="i6l-lL-ufS" sceneMemberID="viewController">
+                <viewController id="i6l-lL-ufS" customClass="ViewController_Squirtle" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipK-T9-4ul">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,10 +285,10 @@
             </objects>
             <point key="canvasLocation" x="724.63768115942037" y="1053.3482142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Squirtle1-->
         <scene sceneID="L5O-6h-BC4">
             <objects>
-                <viewController id="HWh-gX-PE4" sceneMemberID="viewController">
+                <viewController id="HWh-gX-PE4" customClass="ViewController_Squirtle_1" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDh-6J-9JI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="1581.1594202898552" y="1731.6964285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Squirtle2-->
         <scene sceneID="gzo-tD-CK9">
             <objects>
-                <viewController id="CUG-Xf-VQw" sceneMemberID="viewController">
+                <viewController id="CUG-Xf-VQw" customClass="ViewController_Squirtle_2" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cXb-df-I6I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,10 +327,10 @@
             </objects>
             <point key="canvasLocation" x="2453.6231884057975" y="1731.6964285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Squirtle3-->
         <scene sceneID="ucU-Ub-FHQ">
             <objects>
-                <viewController id="VTy-Uf-XZE" sceneMemberID="viewController">
+                <viewController id="VTy-Uf-XZE" customClass="ViewController_Squirtle_3" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ks-BA-aen">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,11 +348,11 @@
             </objects>
             <point key="canvasLocation" x="3266.666666666667" y="1731.6964285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Charmander-->
         <scene sceneID="dQb-E2-jel">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5g-wh-NLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="0lO-LO-Lrj" sceneMemberID="viewController">
+                <viewController id="0lO-LO-Lrj" customClass="ViewController_Charmander" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="84F-RI-07j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -409,10 +409,10 @@
             </objects>
             <point key="canvasLocation" x="721.73913043478262" y="-354.24107142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Charmander2-->
         <scene sceneID="8aj-p2-9uC">
             <objects>
-                <viewController id="ReL-6w-7bc" sceneMemberID="viewController">
+                <viewController id="ReL-6w-7bc" customClass="ViewController_Charmander_2" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ia-DM-tmd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,10 +431,10 @@
             </objects>
             <point key="canvasLocation" x="1871" y="-1339"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Charmander1-->
         <scene sceneID="XPZ-ze-zfo">
             <objects>
-                <viewController id="Kmw-5T-yxM" sceneMemberID="viewController">
+                <viewController id="Kmw-5T-yxM" customClass="ViewController_Charmander_1" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kZI-Vp-Kxg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

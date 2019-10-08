@@ -22,6 +22,7 @@ struct Pokemon {
         defense = defense + Int.random(in: 5...10)
     }
 }
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -44,7 +45,119 @@ class ViewController: UIViewController {
 
 
 
-class ViewController2: UIViewController {
+class ViewController_Charmander: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+class ViewController_Charmander_1: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+
+}
+    
+
+class ViewController_Charmander_2: UIViewController {
+
+override func viewDidLoad() {     super.viewDidLoad()
+     // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+class ViewController_Charmander_3: UIViewController {
+
+override func viewDidLoad() {     super.viewDidLoad()
+     // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+class ViewController_Bulbasaur: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+class ViewController_Bulbasaur_1: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+class ViewController_Bulbasaur_2: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+
+}
+
+class ViewController_Bulbasaur_3: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+    
+
+
+
+
+class ViewController_Squirtle: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+
+class ViewController_Squirtle_1: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+
+class ViewController_Squirtle_2: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+
+class ViewController_Squirtle_3: UIViewController {
 
 override func viewDidLoad() {
     super.viewDidLoad()
