@@ -15,31 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please pick your first Pokemon..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NES-as-WuB">
-                                <rect key="frame" x="20" y="191" width="374" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Charmander-1" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-4m-2sZ">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="72e-ET-VAd" appends="YES" id="tF5-9m-8IF"/>
-                                </connections>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Squirtle-1" translatesAutoresizingMaskIntoConstraints="NO" id="D2i-XX-1fe">
-                                <rect key="frame" x="87" y="696" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Squirtle-1" translatesAutoresizingMaskIntoConstraints="NO" id="D2i-XX-1fe">
+                                <rect key="frame" x="81" y="666" width="253" height="207"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RXr-Ig-Gqd" appends="YES" id="WM8-ax-Cfm"/>
                                 </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bulbasaur-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Rt-Fp-mYF">
-                                <rect key="frame" x="87" y="554" width="240" height="104"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bulbasaur-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Rt-Fp-mYF">
+                                <rect key="frame" x="81" y="442" width="253" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -48,6 +33,21 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Welcome to Pokemon adventure!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzB-kW-3mx">
                                 <rect key="frame" x="20" y="114" width="374" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Charmander-1" translatesAutoresizingMaskIntoConstraints="NO" id="iNA-4m-2sZ">
+                                <rect key="frame" x="81" y="239" width="253" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="72e-ET-VAd" appends="YES" id="tF5-9m-8IF"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please pick your first Pokemon..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NES-as-WuB">
+                                <rect key="frame" x="34" y="192" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -63,16 +63,19 @@
                 <tapGestureRecognizer id="ClA-wm-SkN">
                     <connections>
                         <action selector="BulbasaurTapped:" destination="BYZ-38-t0r" id="G34-1Z-4f7"/>
+                        <segue destination="07o-xr-urr" kind="show" id="U3y-15-UEO"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="72e-ET-VAd">
                     <connections>
                         <action selector="CharmanderTapped:" destination="BYZ-38-t0r" id="I26-70-A3v"/>
+                        <segue destination="0lO-LO-Lrj" kind="showDetail" id="yAU-xn-iob"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="RXr-Ig-Gqd">
                     <connections>
                         <action selector="SquirtleTapped:" destination="BYZ-38-t0r" id="gKH-lG-kHL"/>
+                        <segue destination="i6l-lL-ufS" kind="show" id="fox-wi-laf"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -83,7 +86,7 @@
             <objects>
                 <viewController id="07o-xr-urr" customClass="ViewController_Bulbasaur" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2dq-LO-3GU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Pokemon: Bulbasaur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9K-ja-Wkw">
@@ -112,16 +115,25 @@
                                 <rect key="frame" x="20" y="358" width="167" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Bulbasaur-1"/>
+                                <connections>
+                                    <segue destination="Mvm-Di-O08" kind="show" id="dEC-E6-OSY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SI-jE-Di5">
                                 <rect key="frame" x="20" y="537" width="167" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Bulbasaur-2"/>
+                                <connections>
+                                    <segue destination="jje-G3-511" kind="show" id="Tdh-UX-d2Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukq-79-6C8">
                                 <rect key="frame" x="20" y="692" width="167" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Bulbasaur-3"/>
+                                <connections>
+                                    <segue destination="Gds-xi-NbK" kind="show" id="g1h-Kx-HfQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evolution:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW8-Jj-h9n">
                                 <rect key="frame" x="20" y="261" width="374" height="21"/>
@@ -130,10 +142,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLV-m8-7hC">
+                                <rect key="frame" x="302" y="731" width="92" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go training!">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H62-v7-baa" kind="presentation" modalPresentationStyle="fullScreen" id="oND-hq-4Er"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5Hh-hY-SMQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pef-yy-4eh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1U-gU-NKE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +167,7 @@
             <objects>
                 <viewController id="Mvm-Di-O08" customClass="ViewController_Bulbasaur_1" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5BL-zQ-nSw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bulbasaur-1" translatesAutoresizingMaskIntoConstraints="NO" id="D2m-DZ-gfR">
@@ -155,6 +178,7 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="yPN-rJ-ZD8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YI8-dg-iEy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4UG-9I-bvf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +189,7 @@
             <objects>
                 <viewController id="jje-G3-511" customClass="ViewController_Bulbasaur_2" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oqA-Cr-mkK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bulbasaur-2" translatesAutoresizingMaskIntoConstraints="NO" id="5DW-be-3q6">
@@ -176,6 +200,7 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ocq-Xd-dcK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N5V-oO-rKR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCA-zM-fRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,7 +211,7 @@
             <objects>
                 <viewController id="Gds-xi-NbK" customClass="ViewController_Bulbasaur_3" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kkw-p2-9O0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bulbasaur-3" translatesAutoresizingMaskIntoConstraints="NO" id="1xk-aA-lDF">
@@ -197,17 +222,200 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DOU-2c-q6C"/>
                     </view>
+                    <navigationItem key="navigationItem" id="32K-jm-sL7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZd-K9-aEQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3224.6376811594205" y="372.99107142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="n6c-Li-x6M">
+            <objects>
+                <viewController id="H62-v7-baa" customClass="ViewController" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAO-ya-fIz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your opponent to train..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkB-y3-r6I">
+                                <rect key="frame" x="20" y="44" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfd-Hy-7ro">
+                                <rect key="frame" x="100" y="101" width="215" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Beedrill"/>
+                                <connections>
+                                    <segue destination="5R4-m1-DLr" kind="show" id="qqM-Vb-IMJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQG-0T-2Lj">
+                                <rect key="frame" x="134" y="324" width="172" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Caterpie"/>
+                                <connections>
+                                    <segue destination="zFy-3A-GQY" kind="show" id="Bbu-9o-WN7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQx-bh-ZKa">
+                                <rect key="frame" x="100" y="572" width="215" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Zubat"/>
+                                <connections>
+                                    <segue destination="F7K-Ir-Ytg" kind="show" id="fsT-z6-nbl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Dgg-Qx-koG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ARH-3X-Gsq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hk9-gU-MsF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4640.579710144928" y="363.61607142857139"/>
+        </scene>
+        <!--View Controller Caterpie-->
+        <scene sceneID="0ql-rY-TyY">
+            <objects>
+                <viewController id="zFy-3A-GQY" customClass="ViewController_Caterpie" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UTm-wW-p3b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Caterpie" translatesAutoresizingMaskIntoConstraints="NO" id="YoT-WT-rOe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3U-PM-5nz">
+                                <rect key="frame" x="263" y="727" width="131" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fight!"/>
+                                <connections>
+                                    <segue destination="1Ea-BR-aQX" kind="presentation" modalPresentationStyle="fullScreen" id="QL7-Ib-bPg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Go-fc-Zad">
+                                <rect key="frame" x="20" y="20" width="374" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Caterpie has a voracious appetite. It can devour leaves bigger than its body right before your eyes. From its antenna, this Pokémon releases a terrifically strong odor.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZOF-C0-SEN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0qP-my-f1t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hv9-tV-yrO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5595.652173913044" y="465.40178571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vRJ-aM-DXh">
+            <objects>
+                <viewController id="1Ea-BR-aQX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzf-Ge-YaJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hWo-gI-fTV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dUN-hM-HeL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FcD-o3-ybT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6932" y="458"/>
+        </scene>
+        <!--View Controller Zubat-->
+        <scene sceneID="Kez-Ki-aXC">
+            <objects>
+                <viewController id="F7K-Ir-Ytg" customClass="ViewController_Zubat" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eh3-Ys-aQK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Zubat" translatesAutoresizingMaskIntoConstraints="NO" id="if1-8b-JSm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAY-Bo-RMj">
+                                <rect key="frame" x="263" y="727" width="131" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fight!"/>
+                                <connections>
+                                    <segue destination="1Ea-BR-aQX" kind="presentation" modalPresentationStyle="fullScreen" id="sEc-zL-9rJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fb-Xt-L42">
+                                <rect key="frame" x="20" y="20" width="374" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Zubat remains quietly unmoving in a dark spot during the bright daylight hours. It does so because prolonged exposure to the sun causes its body to become slightly burned.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QKy-Ag-ePf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VDE-BQ-TuO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVy-f9-922" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5602.898550724638" y="1330.5803571428571"/>
+        </scene>
+        <!--View Controller Beedrill-->
+        <scene sceneID="yU9-YC-PGL">
+            <objects>
+                <viewController id="5R4-m1-DLr" customClass="ViewController_Beedrill" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SnR-4p-I0u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beedrill" translatesAutoresizingMaskIntoConstraints="NO" id="GYK-Yc-UZQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afD-cX-axJ">
+                                <rect key="frame" x="263" y="702" width="131" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fight!"/>
+                                <connections>
+                                    <segue destination="1Ea-BR-aQX" kind="presentation" modalPresentationStyle="fullScreen" id="KFu-lq-LaM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixX-EP-ejp">
+                                <rect key="frame" x="20" y="20" width="374" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Beedrill is extremely territorial. No one should ever approach its nest—this is for their own safety. If angered, they will attack in a furious swarm.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="my8-7M-WJB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X9X-GW-bVr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebv-Mp-PeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5576.811594202899" y="-406.47321428571428"/>
         </scene>
         <!--View Controller Charmander3-->
         <scene sceneID="784-Sn-OHW">
             <objects>
                 <viewController id="4Pc-GF-bZy" customClass="ViewController_Charmander_3" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A5q-t6-UmV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Charmander-3" translatesAutoresizingMaskIntoConstraints="NO" id="bDc-Hr-8C3">
@@ -219,17 +427,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="OA1-Lg-5Ws"/>
                     </view>
+                    <navigationItem key="navigationItem" id="uQu-ud-TJI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZh-Cf-c9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2634.7826086956525" y="-1339.2857142857142"/>
+            <point key="canvasLocation" x="2735" y="-1187"/>
         </scene>
         <!--View Controller Squirtle-->
         <scene sceneID="dqc-f2-Kha">
             <objects>
                 <viewController id="i6l-lL-ufS" customClass="ViewController_Squirtle" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipK-T9-4ul">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Pokemon: Squirtle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4o-dq-5xf">
@@ -265,21 +474,41 @@
                                 <rect key="frame" x="20" y="319" width="172" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Squirtle-1"/>
+                                <connections>
+                                    <segue destination="HWh-gX-PE4" kind="show" id="iPZ-ct-0Ej"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-0Q-FP7">
                                 <rect key="frame" x="20" y="510" width="172" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Squirtle-2"/>
+                                <connections>
+                                    <segue destination="CUG-Xf-VQw" kind="show" id="zUp-Pm-LWw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9n-BY-6DX">
                                 <rect key="frame" x="20" y="690" width="172" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Squirtle-3"/>
+                                <connections>
+                                    <segue destination="VTy-Uf-XZE" kind="show" id="9iQ-rj-NUk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlH-XI-l7e">
+                                <rect key="frame" x="262" y="741" width="132" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go training!">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H62-v7-baa" kind="presentation" modalPresentationStyle="fullScreen" id="19P-gS-kb4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uPZ-1K-YJb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aSt-oi-E6D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9y-kh-JJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,7 +519,7 @@
             <objects>
                 <viewController id="HWh-gX-PE4" customClass="ViewController_Squirtle_1" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDh-6J-9JI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Squirtle-1" translatesAutoresizingMaskIntoConstraints="NO" id="Umx-nL-XLr">
@@ -301,6 +530,7 @@
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="mwT-nD-Rd5"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zSM-aB-Ut4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ax-sf-NGO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -311,7 +541,7 @@
             <objects>
                 <viewController id="CUG-Xf-VQw" customClass="ViewController_Squirtle_2" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cXb-df-I6I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Squirtle-2" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-aw-gN1">
@@ -322,6 +552,7 @@
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="da5-V2-rto"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xWf-wL-kgz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Uc-Ec-yzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,7 +563,7 @@
             <objects>
                 <viewController id="VTy-Uf-XZE" customClass="ViewController_Squirtle_3" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ks-BA-aen">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Squirtle-3" translatesAutoresizingMaskIntoConstraints="NO" id="gVf-sH-RmR">
@@ -343,6 +574,7 @@
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vlA-2t-p23"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pRm-WW-38w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ll0-af-9BQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -351,10 +583,9 @@
         <!--View Controller Charmander-->
         <scene sceneID="dQb-E2-jel">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r5g-wh-NLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="0lO-LO-Lrj" customClass="ViewController_Charmander" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="84F-RI-07j">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Pokemon: Charmander" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1J-gw-T2O">
@@ -390,22 +621,43 @@
                                 <rect key="frame" x="20" y="412" width="146" height="147"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Charmander-1"/>
+                                <connections>
+                                    <segue destination="Kmw-5T-yxM" kind="show" id="zu1-Cj-ZU9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOE-eg-7LQ">
                                 <rect key="frame" x="20" y="567" width="146" height="141"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Charmander-2"/>
+                                <connections>
+                                    <segue destination="ReL-6w-7bc" kind="show" id="TXZ-HU-8xN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwu-H2-nrv">
                                 <rect key="frame" x="20" y="716" width="146" height="146"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Charmander-3"/>
+                                <connections>
+                                    <segue destination="4Pc-GF-bZy" kind="show" id="Kfg-9s-0mI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3o-fX-WE5">
+                                <rect key="frame" x="283" y="760" width="111" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go training!">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="H62-v7-baa" kind="presentation" modalPresentationStyle="fullScreen" id="xTP-T4-EVK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="A1B-8c-tbb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0z3-60-7mD"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5g-wh-NLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="721.73913043478262" y="-354.24107142857139"/>
         </scene>
@@ -414,7 +666,7 @@
             <objects>
                 <viewController id="ReL-6w-7bc" customClass="ViewController_Charmander_2" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ia-DM-tmd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Charmander-2" translatesAutoresizingMaskIntoConstraints="NO" id="rcQ-86-gKC">
@@ -426,17 +678,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rFD-vy-SUz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K39-6Q-lba"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJP-hA-O3G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871" y="-1339"/>
+            <point key="canvasLocation" x="1939" y="-1187"/>
         </scene>
         <!--View Controller Charmander1-->
         <scene sceneID="XPZ-ze-zfo">
             <objects>
                 <viewController id="Kmw-5T-yxM" customClass="ViewController_Charmander_1" customModule="NarativeStory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kZI-Vp-Kxg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Charmander-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wxb-v1-u2U">
@@ -444,25 +697,43 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2t-Go-ZeB">
+                                <rect key="frame" x="20" y="20" width="374" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="FfT-Ch-7MI"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MYA-1g-qDw"/>
+                    <connections>
+                        <outlet property="PokemonInf" destination="R2t-Go-ZeB" id="2v8-YM-hmn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPw-jO-oVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1139" y="-1338"/>
+            <point key="canvasLocation" x="1169.5652173913045" y="-1187.2767857142856"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Beedrill" width="215" height="215"/>
         <image name="Bulbasaur-1" width="215" height="215"/>
         <image name="Bulbasaur-2" width="215" height="215"/>
         <image name="Bulbasaur-3" width="215" height="215"/>
+        <image name="Caterpie" width="475" height="475"/>
         <image name="Charmander-1" width="215" height="215"/>
         <image name="Charmander-2" width="215" height="215"/>
         <image name="Charmander-3" width="215" height="215"/>
         <image name="Squirtle-1" width="215" height="215"/>
         <image name="Squirtle-2" width="215" height="215"/>
         <image name="Squirtle-3" width="215" height="215"/>
+        <image name="Zubat" width="215" height="215"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KFu-lq-LaM"/>
+        <segue reference="xTP-T4-EVK"/>
+    </inferredMetricsTieBreakers>
 </document>

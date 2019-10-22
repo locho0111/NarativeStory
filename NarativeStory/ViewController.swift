@@ -10,7 +10,7 @@ import UIKit
 
 struct Pokemon {
     var name: String
-    var health: Int = 100
+    var health: Int = 1000
     var attack: Int
     var defense: Int
     var level: Int = 1
@@ -22,6 +22,11 @@ struct Pokemon {
         defense = defense + Int.random(in: 5...10)
     }
 }
+
+let Charmander = Pokemon(name: "Charmander", attack: 100, defense: 50)
+
+let Bulbasaur = Pokemon(name: "Bulbsaur", attack: 50, defense: 100)
+let Squirtle = Pokemon (name: "Squirtle", attack: 50, defense: 50)
 
 class ViewController: UIViewController {
 
@@ -62,6 +67,7 @@ override func viewDidLoad() {
     // Do any additional setup after loading the view.
 }
 
+        
 }
     
 
@@ -167,3 +173,33 @@ override func viewDidLoad() {
     
 }
 
+
+class ViewController_Beedrill: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+class ViewController_Caterpie: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
+
+class ViewController_Zubat: UIViewController {
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+}
+    
+    
+}
